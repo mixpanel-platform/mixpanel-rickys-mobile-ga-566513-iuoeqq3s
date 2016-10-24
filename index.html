@@ -7,9 +7,24 @@
     <script src="https://cdn.mxpnl.com/libs/mixpanel-platform/build/mixpanel-platform.v0.latest.min.js"></script>
   </head>
   <body class="mixpanel-platform-body">
-    <h1>Hello, World!</h1>
+    <div class='dropdown'></div>
     <script>
-      // Run queries and display results here
+      var options = {
+        items: [{label: 'Label 1', value: 1},
+          {label: 'Label 2', value: 'Value 2'},
+          {label: 'Third label', value: '3rd value'}
+        ]
+      };
+
+      $('.dropdown').MPSelect(options);
+      debugger
+      options2 = {
+        items: [{label: 'Label 3', value: 1},
+          {label: 'Label 4', value: 'Value 2'},
+          {label: 'Third', value: '3rd value'}
+        ]
+      };
+      $('.dropdown').MPSelect(options2);
     </script>
   </body>
 </html>
