@@ -7,7 +7,9 @@
     <script src="https://cdn.mxpnl.com/libs/mixpanel-platform/build/mixpanel-platform.v0.latest.min.js"></script>
   </head>
   <body class="mixpanel-platform-body">
-    <div class='dropdown'></div>
+    <div class='dropdown-container'>
+      <div class='dropdown'></div>
+    </div>
     <script>
       var options = {
         items: [{label: 'Label 1', value: 1},
@@ -24,6 +26,7 @@
           {label: 'Third', value: '3rd value'}
         ]
       };
+      $('dropdown-container').append("<div class='dropdown'></div>")
       $('.dropdown').MPSelect(options2);
     </script>
   </body>
